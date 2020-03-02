@@ -1,11 +1,12 @@
-function Challenge() {
-    const Count = parseInt(document.querySelector('#coc').value)
-    const avgStudent = parseInt(document.querySelector('#aspc').value)
+function Challenge()
+{
+     const Count=parseInt(document.querySelector('#coc').value)
+     const avgStudent=parseInt(document.querySelector('#aspc').value)
+     
+     const EstimatedStudent=Count*avgStudent;
+    
 
-    const EstimatedStudent = Count * avgStudent;
-
-
-
-    document.querySelector('#EstimatedStudent').innerHTML = `${EstimatedStudent}`
+     
+     document.querySelector('#EstimatedStudent').innerHTML=`${EstimatedStudent}`
 }
-document.querySelector('#calculate').addEventListener('click', Challenge)
+     document.querySelector('#calculate').addEventListener('click',Challenge)
