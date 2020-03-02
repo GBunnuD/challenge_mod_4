@@ -1,12 +1,12 @@
 function Challenge()
 {
-     const Count=parseFloat(document.querySelector('#coc').value)
-     const avgStudent=parseFloat(document.querySelector('#aspc').value)
+     const Count=parseInt(document.querySelector('#coc').value)
+     const avgStudent=parseInt(document.querySelector('#aspc').value)
      
      const EstimatedStudent=Count*avgStudent;
     
 
      
-     document.querySelector('EstimatedStudent').innerHTML=`${EstimatedStudent.toFixed(2)}`
+     document.querySelector('#EstimatedStudent').innerHTML=`${EstimatedStudent}`
 }
      document.querySelector('#calculate').addEventListener('click',Challenge)
